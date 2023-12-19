@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- ファイルアップロードセクション -->
+    <section>
+        <h2>ファイル・アップロード</h2>
+        <p>ファイル名: <input type="text" id="file-name" /></p>
+        <p>
+            ファイル: <input type="file" id="file-data" />
+            <button id="upload-button">アップロード</button>
+        </p>
+        <div id="upload-result"></div>
+    </section>
+
+    <hr />
+
+    <!-- ファイル検索セクション -->
+    <section>
+        <h2>ファイル検索</h2>
+        <p>
+            検索キーワード: <input type="text" id="search-keyword" />
+            <button id="search-button">検索</button>
+        </p>
+        <ul id="search-results"></ul>
+    </section>
+
+    <hr />
+
+    <!-- ファイル一覧表示セクション -->
+    <section>
+        <h2>ファイル一覧</h2>
+        <button id="list-files-button">ファイル一覧を表示</button>
+        <ul id="files-list"></ul>
+    </section>
+
+    <hr />
+    <!-- ファイル削除セクション -->
+    <section>
+        <h2>ファイル削除</h2>
+        <button id="delete-selected-button">選択したファイルを削除</button>
+    </section>
+
+    <!-- JavaScriptモジュールのインポート -->
+    <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
